@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@import "@fontsource/milonga/index.css";
+
+:root {
+  --background: #4d1a13;
+  --foreground: #f0e4c9;
+  --footer-bg: #f0e4c9;
+  --footer-fg: #4d1a13;
+  --footer-selected-bg: #1e1e1e;
+  --footer-selected-fg: #f0e4c9;
+  --font-milonga: "Milonga", cursive;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-milonga), Arial, Helvetica, sans-serif;
+}
+
+/* Utility for footer menu */
+.footer-menu {
+  background: var(--footer-bg);
+  color: var(--footer-fg);
+}
+.footer-menu .selected {
+  background: var(--footer-selected-bg);
+  color: var(--footer-selected-fg);
+}
+
+@font-face {
+  font-family: "Bayside Tavern Plain";
+  src: url("../fonts/bayside.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-bayside {
+  font-family: "Bayside Tavern Plain", sans-serif;
+}
+
+.page {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cover-logo {
+  width: 400px;
+  height: 600px;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
