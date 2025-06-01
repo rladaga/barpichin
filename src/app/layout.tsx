@@ -13,6 +13,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <head>
+        <link rel="icon" href="/favicon.png" />
+      </head>
       <body>{children}</body>
     </html>
   );
