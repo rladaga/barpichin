@@ -61,22 +61,22 @@ const MenuFlipbook = () => {
         useMouseEvents={true}
       >
         <div className="page" style={{ background: "transparent" }}>
-          <img src="/cover.jpg" alt="" className="cover-logo" />
+          <img src="/hoja1_frente.jpg" alt="" className="cover-logo" />
         </div>
         <div className="page">
-          <img src="/hoja1.jpg" alt="" className="cover-logo" />
+          <img src="/hoja1_dorso.jpg" alt="" className="cover-logo" />
         </div>
         <div className="page">
-          <img src="/hoja2.jpg" alt="" className="cover-logo" />
+          <img src="/hoja2_frente.jpg" alt="" className="cover-logo" />
         </div>
         <div className="page">
-          <img src="/hoja3.jpg" alt="" className="cover-logo" />
+          <img src="/hoja2_dorso.jpg" alt="" className="cover-logo" />
         </div>
         <div className="page">
-          <img src="/hoja4.jpg" alt="" className="cover-logo" />
+          <img src="/hoja3_frente.jpg" alt="" className="cover-logo" />
         </div>
         <div className="page">
-          <img src="/hoja5.jpg" alt="" className="cover-logo" />
+          <img src="/hoja3_dorso.jpg" alt="" className="cover-logo" />
         </div>
       </HTMLFlipBook>
       <div style={{ marginTop: "1rem", display: "flex", gap: "2rem" }}>
