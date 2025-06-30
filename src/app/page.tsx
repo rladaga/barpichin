@@ -38,7 +38,7 @@ export default function Home() {
                   alt="Bar Pichin Logo"
                   width={180}
                   height={80}
-                  className="w-[200px] h-auto sm:w-[260px]"
+                  className="w-[180px] h-auto sm:w-[200px] md:w-[220px] lg:w-[260px]"
                   priority
                 />
               </div>

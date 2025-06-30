@@ -1,26 +1,24 @@
 import React, { useState } from "react";
 
 // Definimos los días de la semana
-const days = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+const days = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"];
 
 // Indicamos qué días tienen contenido real
 const hasContent = {
-  Lunes: false,
-  Martes: false,
+  Lunes: true,
+  Martes: true,
   Miércoles: true,
-  Jueves: false,
+  Jueves: true,
   Viernes: true,
-  Sábado: false,
 };
 
 // Las imágenes para cada día
 const suggestions = {
-  Lunes: [],
-  Martes: [],
+  Lunes: ["/lunes.jpg"],
+  Martes: ["/martes.jpg"],
   Miércoles: ["/tacos.jpeg"],
-  Jueves: [],
+  Jueves: ["/jueves.jpg"],
   Viernes: ["/tragos.jpeg"],
-  Sábado: [],
 };
 
 const Sugerencias = () => {
@@ -56,7 +54,6 @@ const Sugerencias = () => {
           {open === day && (
             <div className="p-4 flex flex-col gap-3 bg-[#fff8ef]">
               {hasContent[day as keyof typeof hasContent] ? (
-                // Si hay contenido, mostramos las imágenes
                 suggestions[day as keyof typeof suggestions].map((img, idx) => (
                   <img
                     key={idx}
